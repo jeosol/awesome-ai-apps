@@ -16,7 +16,7 @@ agent = Agent(
             api_key=os.getenv("NEBIUS_API_KEY")
     ),
     tools=[DuckDuckGoTools(), YFinanceTools(stock_price=True, analyst_recommendations=True, stock_fundamentals=True)],
-    instructions = ["Always use tables to display financial/numerical data. For text data use bullet points and small paragrpahs."],
+    instructions = ["Always use tables to display financial/numerical data. For text data use bullet points and small paragraphs."],
     show_tool_calls = True,
     markdown = True,
     )
